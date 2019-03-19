@@ -203,7 +203,7 @@ func processButtons(keys [][]InlineButton) {
 	}
 }
 
-func embedRights(p map[string]string, prv Rights) {
+func embedRights(p map[string]interface{}, prv Rights) {
 	jsonRepr, _ := json.Marshal(prv)
 	json.Unmarshal(jsonRepr, &p)
 }
